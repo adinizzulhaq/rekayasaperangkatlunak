@@ -1,0 +1,256 @@
+/* =========================================
+   ADMIN - BORROWINGS
+========================================= */
+
+body {
+    background-color: #f5f7fb;
+    color: #212529;
+}
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.admin-page {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 6px;
+}
+
+.page-subtitle {
+    color: #6b7280;
+    margin-bottom: 0;
+}
+
+/* =========================================
+   DASHBOARD BUTTON
+========================================= */
+
+.btn-dashboard {
+    border: 1px solid #d1d5db;
+    background-color: #ffffff;
+    color: #374151;
+    font-weight: 500;
+    padding: 9px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.btn-dashboard:hover {
+    background-color: #f3f4f6;
+    color: #111827;
+}
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.borrowing-card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+/* =========================================
+   TABLE
+========================================= */
+
+.borrowing-table {
+    margin-bottom: 0;
+}
+
+.borrowing-table thead th {
+    background-color: #f8fafc;
+    color: #6b7280;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 16px 14px;
+    white-space: nowrap;
+}
+
+.borrowing-table tbody td {
+    padding: 16px 14px;
+    border-bottom: 1px solid #f0f1f3;
+    color: #374151;
+    font-size: 14px;
+}
+
+.borrowing-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.borrowing-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.borrowing-table tbody tr:hover {
+    background-color: #fafafa;
+}
+
+/* =========================================
+   USER & BOOK
+========================================= */
+
+.data-title {
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 3px;
+}
+
+.data-subtitle {
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+/* =========================================
+   DATE
+========================================= */
+
+.date-text {
+    white-space: nowrap;
+    color: #4b5563;
+}
+
+/* =========================================
+   STATUS BADGE
+========================================= */
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-approved {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.status-rejected {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.status-returned {
+    background-color: #e2e3e5;
+    color: #41464b;
+}
+
+/* =========================================
+   ACTION BUTTON
+========================================= */
+
+.action-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+.btn-action {
+    border: none;
+    border-radius: 7px;
+    padding: 7px 13px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.btn-approve {
+    background-color: #198754;
+    color: #ffffff;
+}
+
+.btn-approve:hover {
+    background-color: #157347;
+    color: #ffffff;
+}
+
+.btn-reject {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.btn-reject:hover {
+    background-color: #bb2d3b;
+    color: #ffffff;
+}
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.empty-state {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.empty-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.empty-title {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 5px;
+}
+
+.empty-description {
+    color: #9ca3af;
+    margin-bottom: 0;
+}
+
+/* =========================================
+   ALERT
+========================================= */
+
+.alert {
+    border-radius: 10px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+    .admin-page {
+        padding-top: 25px;
+    }
+
+    .page-title {
+        font-size: 23px;
+    }
+
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 15px;
+    }
+
+    .btn-dashboard {
+        width: 100%;
+        text-align: center;
+    }
+}
