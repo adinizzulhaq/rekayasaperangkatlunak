@@ -158,6 +158,22 @@
         font-size: 11px;
     }
 
+    .category-badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: #EEF2FF;
+        color: #4338CA;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .category-empty {
+        color: #94A3B8;
+        font-size: 13px;
+    }
+
     .isbn {
         font-family: monospace;
         color: #64748B;
@@ -235,6 +251,10 @@
         font-size: 12px;
     }
 
+    i {
+        margin-right: 5px;
+    }
+
     @media (max-width: 768px) {
         .books-page {
             padding: 20px 15px;
@@ -307,6 +327,7 @@
                         <th>No</th>
                         <th>Buku</th>
                         <th>Penulis</th>
+                        <th>Kategori</th>
                         <th>Penerbit</th>
                         <th>Tahun</th>
                         <th>ISBN</th>
@@ -362,6 +383,18 @@
                         </td>
 
                         <td>
+                            @if ($book->category)
+                            <span class="category-badge">
+                                {{ $book->category->name }}
+                            </span>
+                            @else
+                            <span class="category-empty">
+                                Belum ada
+                            </span>
+                            @endif
+                        </td>
+
+                        <td>
                             {{ $book->publisher ?? '-' }}
                         </td>
 
@@ -382,6 +415,7 @@
                                 <a
                                     href="{{ route('admin.books.edit', $book) }}"
                                     class="btn-action btn-edit">
+                                    <i class="fa-solid fa-pen"></i>
                                     Edit
                                 </a>
 
@@ -395,6 +429,7 @@
                                     <button
                                         type="submit"
                                         class="btn-action btn-delete">
+                                        <i class="fa-solid fa-trash"></i>
                                         Hapus
                                     </button>
 
@@ -412,7 +447,7 @@
                         <td colspan="7" class="empty-state">
 
                             <div class="empty-icon">
-                                📚
+                                <i class="fa-solid fa-book"></i>
                             </div>
 
                             <h3 class="empty-title">

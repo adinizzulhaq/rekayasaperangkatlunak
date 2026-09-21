@@ -8,6 +8,7 @@ use App\Http\Controllers\BorrowingController;
 use App\Http\Controllers\ProfileController;
 
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
+use App\Http\Controllers\Admin\CategoryController as AdminCategoryController;
 use App\Http\Controllers\Admin\BookController as AdminBookController;
 use App\Http\Controllers\Admin\UserController as AdminUserController;
 
@@ -68,6 +69,9 @@ Route::middleware(['auth', 'admin'])
         Route::get('/books', [AdminBookController::class, 'index'])
             ->name('books.index');
 
+        Route::get('/books/{book}', [AdminBookController::class, 'show'])
+            ->name('books.show');
+
         Route::get('/books/create', [AdminBookController::class, 'create'])
             ->name('books.create');
 
@@ -82,6 +86,9 @@ Route::middleware(['auth', 'admin'])
 
         Route::delete('/books/{book}', [AdminBookController::class, 'destroy'])
             ->name('books.destroy');
+
+        Route::resource('categories', AdminCategoryController::class)
+            ->except(['show']);
 
         /*
         |--------------------------------------------------------------------------
@@ -129,6 +136,10 @@ Route::middleware(['auth', 'admin'])
 Route::get('/books', [BookController::class, 'index'])
     ->middleware('auth')
     ->name('books.index');
+
+Route::get('/books/{book}', [BookController::class, 'show'])
+    ->middleware('auth')
+    ->name('books.show');
 
 /*
 |--------------------------------------------------------------------------

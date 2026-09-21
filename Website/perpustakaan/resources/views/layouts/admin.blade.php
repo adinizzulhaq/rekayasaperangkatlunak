@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="id">
 
 <head>
@@ -8,12 +9,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
-        @yield('title', 'Admin Perpustakaan')
+        @yield('title', 'Admin | Perpustakaan')
     </title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        rel="icon"
+        href="{{ asset('images/favicon.png') }}"
+        type="image/png">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
     <link
@@ -38,6 +53,7 @@
             font-family: 'Inter', sans-serif;
         }
 
+
         /* =========================================
            LAYOUT
         ========================================= */
@@ -55,18 +71,14 @@
         .admin-sidebar {
             width: 250px;
             min-height: 100vh;
-
             background: #111827;
             color: #ffffff;
-
             position: fixed;
             left: 0;
             top: 0;
             bottom: 0;
-
             display: flex;
             flex-direction: column;
-
             z-index: 1000;
         }
 
@@ -77,30 +89,27 @@
 
         .sidebar-brand {
             height: 75px;
-
             display: flex;
             align-items: center;
-
             padding: 0 24px;
-
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .brand-icon {
             width: 38px;
             height: 38px;
-
-            border-radius: 10px;
-
-            background: #4f46e5;
-
             display: flex;
             align-items: center;
             justify-content: center;
-
             font-size: 20px;
-
             margin-right: 11px;
+        }
+
+        .brand-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
         }
 
         .brand-text {
@@ -111,12 +120,9 @@
 
         .brand-subtitle {
             display: block;
-
             font-size: 10px;
             font-weight: 400;
-
             color: #9ca3af;
-
             margin-top: 2px;
         }
 
@@ -132,14 +138,10 @@
 
         .menu-label {
             padding: 0 12px;
-
             margin-bottom: 10px;
-
             font-size: 10px;
             font-weight: 700;
-
             color: #6b7280;
-
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -147,24 +149,15 @@
         .menu-item {
             display: flex;
             align-items: center;
-
             gap: 12px;
-
             width: 100%;
-
             padding: 11px 13px;
-
             margin-bottom: 4px;
-
             border-radius: 8px;
-
             color: #9ca3af;
-
             text-decoration: none;
-
             font-size: 14px;
             font-weight: 500;
-
             transition: all 0.2s ease;
         }
 
@@ -180,9 +173,7 @@
 
         .menu-icon {
             width: 20px;
-
             text-align: center;
-
             font-size: 16px;
         }
 
@@ -193,32 +184,22 @@
 
         .sidebar-footer {
             padding: 15px;
-
             border-top: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .logout-button {
             width: 100%;
-
             display: flex;
             align-items: center;
-
             gap: 12px;
-
             padding: 11px 13px;
-
             border: none;
             border-radius: 8px;
-
             background: transparent;
-
             color: #9ca3af;
-
             font-size: 14px;
             font-weight: 500;
-
             cursor: pointer;
-
             transition: 0.2s ease;
         }
 
@@ -234,9 +215,7 @@
 
         .admin-main {
             margin-left: 250px;
-
             width: calc(100% - 250px);
-
             min-height: 100vh;
         }
 
@@ -247,46 +226,35 @@
 
         .admin-topbar {
             height: 75px;
-
             background: #ffffff;
-
             border-bottom: 1px solid #e5e7eb;
-
             display: flex;
             align-items: center;
             justify-content: space-between;
-
             padding: 0 30px;
         }
 
         .topbar-title {
             font-size: 16px;
             font-weight: 600;
-
             color: #374151;
         }
 
         .admin-profile {
             display: flex;
             align-items: center;
-
             gap: 10px;
         }
 
         .profile-avatar {
             width: 38px;
             height: 38px;
-
             border-radius: 50%;
-
             background: #ede9fe;
-
             color: #4f46e5;
-
             display: flex;
             align-items: center;
             justify-content: center;
-
             font-weight: 700;
         }
 
@@ -375,7 +343,6 @@
             .profile-info {
                 display: none;
             }
-
         }
     </style>
 
@@ -384,13 +351,12 @@
 
 <body>
 
-
     <div class="admin-layout">
 
 
         {{-- =========================================
-         SIDEBAR
-    ========================================== --}}
+             SIDEBAR
+        ========================================== --}}
 
         <aside class="admin-sidebar">
 
@@ -400,7 +366,11 @@
             <div class="sidebar-brand">
 
                 <div class="brand-icon">
-                    📚
+
+                    <img
+                        src="{{ asset('images/logo.png') }}"
+                        alt="Logo Perpustakaan">
+
                 </div>
 
                 <div class="brand-text">
@@ -416,11 +386,9 @@
             </div>
 
 
-
             {{-- MENU --}}
 
             <div class="sidebar-menu">
-
 
                 <div class="menu-label">
                     Menu Utama
@@ -434,7 +402,7 @@
                     class="menu-item {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">
 
                     <span class="menu-icon">
-                        <i class="fa-solid fa-gauge-high"></i>
+                        <i class="fa-solid fa-house"></i>
                     </span>
 
                     <span class="menu-text">
@@ -444,12 +412,11 @@
                 </a>
 
 
-
                 {{-- Peminjaman --}}
 
                 <a
                     href="{{ route('admin.borrowings.index') }}"
-                    class="menu-item {{ request()->routeIs('admin.borrowings.*') ? 'active' : '' }}">
+                    class="menu-item {{ request()->routeIs('admin.borrowings.index') ? 'active' : '' }}">
 
                     <span class="menu-icon">
                         <i class="fa-solid fa-book-open-reader"></i>
@@ -461,6 +428,22 @@
 
                 </a>
 
+
+                {{-- Peminjam Aktif --}}
+
+                <a
+                    href="{{ route('admin.borrowings.active') }}"
+                    class="menu-item {{ request()->routeIs('admin.borrowings.active') ? 'active' : '' }}">
+
+                    <span class="menu-icon">
+                        <i class="fa-solid fa-user-check"></i>
+                    </span>
+
+                    <span class="menu-text">
+                        Peminjam Aktif
+                    </span>
+
+                </a>
 
 
                 {{-- Buku --}}
@@ -479,6 +462,22 @@
 
                 </a>
 
+
+                {{-- Kategori --}}
+
+                <a
+                    href="{{ route('admin.categories.index') }}"
+                    class="menu-item {{ request()->routeIs('admin.categories.*') ? 'active' : '' }}">
+
+                    <span class="menu-icon">
+                        <i class="fa-solid fa-tags"></i>
+                    </span>
+
+                    <span class="menu-text">
+                        Kategori
+                    </span>
+
+                </a>
 
 
                 {{-- Pengguna --}}
@@ -499,7 +498,6 @@
 
 
             </div>
-
 
 
             {{-- SIDEBAR FOOTER --}}
@@ -534,10 +532,9 @@
         </aside>
 
 
-
         {{-- =========================================
-         MAIN
-    ========================================== --}}
+             MAIN
+        ========================================== --}}
 
         <main class="admin-main">
 
@@ -548,7 +545,10 @@
 
                 <div class="topbar-title">
 
-                    @yield('page-title', 'Admin Dashboard')
+                    @yield(
+                    'page-title',
+                    'Admin Dashboard'
+                    )
 
                 </div>
 
@@ -565,11 +565,15 @@
                     <div class="profile-info">
 
                         <div class="profile-name">
+
                             {{ auth()->user()->name }}
+
                         </div>
 
                         <div class="profile-role">
+
                             Administrator
+
                         </div>
 
                     </div>
@@ -577,7 +581,6 @@
                 </div>
 
             </header>
-
 
 
             {{-- CONTENT --}}
@@ -594,9 +597,12 @@
 
     </div>
 
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     @stack('scripts')
+
+
 </body>
 
 </html>

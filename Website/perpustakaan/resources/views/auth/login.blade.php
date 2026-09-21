@@ -6,8 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Login - Perpustakaan</title>
+    <title>Login | Perpustakaan</title>
 
+    <link rel="icon" href="{{ asset('images/favicon.png') }}" type="image/png">
+
+    <!-- Font Google Inter -->
     {{-- Inter --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,20 +31,9 @@
             background: #F8FAFC;
             color: #111827;
             font-family: 'Inter', sans-serif;
-            -webkit-font-smoothing: antialiased;
         }
 
-        button,
-        input,
-        select,
-        textarea {
-            font-family: 'Inter', sans-serif;
-        }
-
-        /* =========================
-       PAGE
-    ========================= */
-
+        /* Page Section */
         .login-page {
             min-height: 100vh;
             display: flex;
@@ -72,15 +64,10 @@
             height: 48px;
             margin-bottom: 13px;
             border-radius: 12px;
-            background: #4F46E5;
-
             display: flex;
             align-items: center;
             justify-content: center;
-
             font-size: 23px;
-
-            box-shadow: 0 8px 20px rgba(79, 70, 229, .16);
         }
 
         .brand-title {
@@ -360,7 +347,9 @@
             <div class="login-brand">
 
                 <div class="brand-icon">
-                    📚
+                    <img
+                        src="{{ asset('images/logo-dark.png') }}"
+                        alt="Logo Perpustakaan">
                 </div>
 
                 <h2 class="brand-title">

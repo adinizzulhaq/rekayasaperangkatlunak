@@ -711,6 +711,7 @@
                                     <button
                                         type="submit"
                                         class="btn-action btn-approve">
+                                        <i class="fa-solid fa-check"></i>
                                         Setujui
                                     </button>
 
@@ -736,6 +737,7 @@
                                     <button
                                         type="submit"
                                         class="btn-action btn-reject">
+                                        <i class="fa-solid fa-xmark"></i>
                                         Tolak
                                     </button>
 
@@ -764,6 +766,7 @@
                                     <button
                                         type="submit"
                                         class="btn-action btn-return">
+                                        <i class="fa-solid fa-arrow-left"></i>
                                         Kembalikan
                                     </button>
 

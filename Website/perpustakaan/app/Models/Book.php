@@ -17,11 +17,17 @@ class Book extends Model
         'year',
         'isbn',
         'description',
-        'cover'
+        'cover',
+        'category_id',
     ];
 
     public function borrowings()
     {
         return $this->hasMany(Borrowing::class);
+    }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
     }
 }

@@ -6,8 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    ```
-    <title>Daftar - Perpustakaan</title>
+    <title>Daftar | Perpustakaan</title>
+
+    <link rel="icon" href="{{ asset('images/favicon.png') }}" type="image/png">
 
     {{-- Inter --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,15 +74,10 @@
             height: 48px;
             margin-bottom: 13px;
             border-radius: 12px;
-            background: #4F46E5;
-
             display: flex;
             align-items: center;
             justify-content: center;
-
             font-size: 23px;
-
-            box-shadow: 0 8px 20px rgba(79, 70, 229, .16);
         }
 
         .brand-title {
@@ -281,13 +277,11 @@
             }
         }
     </style>
-    ```
 
 </head>
 
 <body>
 
-    ```
     <main class="register-page">
 
         <div class="register-wrapper">
@@ -296,7 +290,9 @@
             <div class="register-brand">
 
                 <div class="brand-icon">
-                    📚
+                    <img
+                        src="{{ asset('images/logo-dark.png') }}"
+                        alt="Logo Perpustakaan">
                 </div>
 
                 <h2 class="brand-title">
@@ -495,7 +491,6 @@
         </div>
 
     </main>
-    ```
 
 </body>
 

@@ -396,6 +396,41 @@
 
                     </div>
 
+                    {{-- KATEGORI --}}
+                    <div class="form-group">
+
+                        <label
+                            for="category_id"
+                            class="form-label">
+                            Kategori
+                            <span class="required">*</span>
+                        </label>
+
+                        <select
+                            id="category_id"
+                            name="category_id"
+                            class="form-control"
+                            required>
+                            <option value="">
+                                Pilih kategori
+                            </option>
+
+                            @foreach ($categories as $category)
+                            <option
+                                value="{{ $category->id }}"
+                                {{ old('category_id', $book->category_id) == $category->id ? 'selected' : '' }}>
+                                {{ $category->name }}
+                            </option>
+                            @endforeach
+                        </select>
+
+                        @error('category_id')
+                        <div class="form-error">
+                            {{ $message }}
+                        </div>
+                        @enderror
+
+                    </div>
 
                     {{-- PENERBIT --}}
                     <div class="form-group">
