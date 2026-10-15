@@ -1,0 +1,55 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram id="state-library" name="State Diagram Peminjaman Buku">
+    <mxGraphModel dx="872" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="670" pageHeight="260" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dD2NYbuZuEM4YhtcvCWM-12" edge="1" parent="1" source="dD2NYbuZuEM4YhtcvCWM-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dD2NYbuZuEM4YhtcvCWM-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dD2NYbuZuEM4YhtcvCWM-18" edge="1" parent="1" source="dD2NYbuZuEM4YhtcvCWM-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="dD2NYbuZuEM4YhtcvCWM-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dD2NYbuZuEM4YhtcvCWM-25" edge="1" parent="1" source="dD2NYbuZuEM4YhtcvCWM-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="dD2NYbuZuEM4YhtcvCWM-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dD2NYbuZuEM4YhtcvCWM-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#4F46E5,#121212);fontColor=#FFFFFF;" value="melakukan aksi" vertex="1">
+          <mxGeometry height="40" width="120" x="280" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dD2NYbuZuEM4YhtcvCWM-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="buka daftar transaksi peminjaman" vertex="1">
+          <mxGeometry height="30" width="185" x="85" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dD2NYbuZuEM4YhtcvCWM-26" edge="1" parent="1" source="dD2NYbuZuEM4YhtcvCWM-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="dD2NYbuZuEM4YhtcvCWM-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-5-qqVAyaAudGeH-Zhxw-2" edge="1" parent="1" source="dD2NYbuZuEM4YhtcvCWM-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="dD2NYbuZuEM4YhtcvCWM-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dD2NYbuZuEM4YhtcvCWM-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#4F46E5,#121212);fontColor=#FFFFFF;" value="membatalkan peminjaman" vertex="1">
+          <mxGeometry height="40" width="120" x="280" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="dD2NYbuZuEM4YhtcvCWM-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="menolak" vertex="1">
+          <mxGeometry height="30" width="80" x="300" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="-5-qqVAyaAudGeH-Zhxw-3" edge="1" parent="1" source="dD2NYbuZuEM4YhtcvCWM-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dD2NYbuZuEM4YhtcvCWM-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dD2NYbuZuEM4YhtcvCWM-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#4F46E5,#121212);fontColor=#FFFFFF;" value="menyetujui peminjaman" vertex="1">
+          <mxGeometry height="40" width="120" x="500" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dD2NYbuZuEM4YhtcvCWM-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="menyetujui" vertex="1">
+          <mxGeometry height="30" width="150" x="375" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dD2NYbuZuEM4YhtcvCWM-23" parent="1" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dD2NYbuZuEM4YhtcvCWM-35" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="545" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="dD2NYbuZuEM4YhtcvCWM-38" parent="1" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;fontSize=16;" value="STATE DIAGRAM PEMINJAMAN BUKU" vertex="1">
+          <mxGeometry height="26" width="322" x="174" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
